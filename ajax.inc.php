@@ -18,6 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && !empty($_POST['data_type']))
 		$password = $_POST['password'];
 		$password_retype = $_POST['retype_password'];
 		$date = date("Y-m-d H:i:s");
+		$role = $_POST["role"];
 
 		//check if this email already exists
 		$query = "select * from users where email = '$email' limit 1";
@@ -33,7 +34,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && !empty($_POST['data_type']))
 		}else
 		{
 			$password = password_hash($password, PASSWORD_DEFAULT);
-			$query = "insert into users (username,email,password,date) values ('$username','$email','$password','$date')";
+			$query = "insert into users (username,email,password,date, image ,role) values ('$username','$email','$password','$date', 'default.jpg' ,'$role')";
 			query($query);
 
 			$query = "select * from users where email = '$email' limit 1";

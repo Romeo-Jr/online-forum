@@ -5,7 +5,7 @@
 	<h1 class="class_27"  >
 		Login
 	</h1>
-	<img src="assets/images/slack.png" class="class_56" >
+	<img src="assets/images/logo.png" class="class_56" >
 	<form onsubmit="login.submit(event)" method="post" class="class_57" >
 		<div class="class_30" >
 			<div class="class_58" >

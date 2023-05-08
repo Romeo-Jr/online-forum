@@ -2,7 +2,7 @@
 
 <header class="class_2" >
 	<div class="class_3" >
-		<img src="assets/images/slack.png" class="class_4" >
+		<img src="assets/images/logo.png" class="class_4" >
 	</div>
 	<div  class="item_class_0 class_5">
 		<div  class="item_class_1 class_6">
@@ -11,14 +11,14 @@
 				</path>
 			</svg>
 		</div>
-		<div  class="item_class_2 class_7">
+		<div  style="font-family:'Yantramanav'; color:black;" class="item_class_2 class_7">
 			<a href="index.php" class="class_8"  >
 				Home
 			</a>
-			<a href="#" class="class_8"  >
+			<a href="about.php" class="class_8"  >
 				About us
 			</a>
-			<a href="#" class="class_8"  >
+			<a href="contact.php" class="class_8"  >
 				Contact us
 			</a>
 		</div>
@@ -26,13 +26,18 @@
 	<div class="class_9" style="display:flex;align-items: center;justify-content: center;"  >
 		<?php if(logged_in()):?>
 			<a href="profile.php">
-				<img src="<?= get_image($_SESSION['USER']['image'])?>" class="class_10" >
-			</a>
-			<a href="profile.php">
-				<span>Hi, <?= $_SESSION['USER']['username']?></span>
+				<?php
+					$user_id = $_SESSION["USER"]["id"];
+					$sql = "select image from users where id = '$user_id'";
+					$row = query($sql);
+					foreach($row as $data){
+						$user_image = $data["image"];
+					}
+				?>
+				<img src="<?php echo $user_image ?>" class="class_10" >
 			</a>
 		<?php else:?>
-			<span style="cursor:pointer;" onclick="login.show()">Login</span>
+			<!-- <span style="cursor:pointer;" onclick="login.show()">Login</span> -->
 		<?php endif;?>
 
 	</div>

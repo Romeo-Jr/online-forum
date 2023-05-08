@@ -6,9 +6,16 @@
 	<h1 class="class_27"  >
 		Signup
 	</h1>
-	<img src="assets/images/slack.png" class="class_56" >
+	<img src="assets/images/logo.png" class="class_56" >
 	<form onsubmit="signup.submit(event)" method="post" class="class_57" >
 		<div class="class_30" >
+			<div class="class_58" >
+			<label for="cars" class="class_32">Type:</label>
+			<select class="class_33" id="role" name="role">
+				<option value="1">Teacher</option>
+				<option value="2">Student</option>
+			</select>
+			</div>
 			<div class="class_58" >
 				<label class="class_32"  >
 					Username:
@@ -62,11 +69,14 @@
 
 			e.preventDefault();
 			let inputs = e.currentTarget.querySelectorAll("input");
+			let role = e.currentTarget.querySelector("select");
 			let form = new FormData();
 
 			for (var i = inputs.length - 1; i >= 0; i--) {
 				form.append(inputs[i].name, inputs[i].value);
 			}
+
+			form.append(role.name, role.value);
 
 			form.append('data_type', 'signup');
 			var ajax = new XMLHttpRequest();

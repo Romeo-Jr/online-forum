@@ -1,0 +1,37 @@
+.class-ul li{
+    display: inline-block;
+}   
+
+.class-ul{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.class-ul li a{
+    text-decoration: none;
+}
+
+.delete_class_ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.delete_class_ul {
+    list-style: none;
+    padding: 0;
+}
+
+.delete_class_ul li input{
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+}
+
+.yesbtn{
+    background-color: #0e6dfd;
+}
+
+.nobtn{
+    background-color: #db3541;
+}

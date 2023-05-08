@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.form{
+    width: 400px;
+    height: 500px;
+    font-family: 'Yantramanav';
+}
+
+.form .head{
+    width: 100%;
+    text-align: center;
+}
+
+.form .head img{
+    width: 150px;
+    height: inherit;
+}
+
+.form .head h2{
+    margin: 0;
+    padding: 0;
+}
+
+.form .body{
+    padding: 10px 30px;
+
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #087dff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }

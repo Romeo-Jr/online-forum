@@ -1,0 +1,23 @@
+.content{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.content > div{
+    width: 300px;
+    padding: 10px;
+}
+
+.content > div .body{
+    padding: 5px 10px;
+    color: #5c5b63;
+}
+
+.content > div img{
+    width: 100%;
+}
+
+.content > div p{
+    margin: 0;
+}

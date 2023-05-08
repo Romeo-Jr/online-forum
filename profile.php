@@ -17,8 +17,9 @@
 	<title>Profile - PHP Forum</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
 </head>
-<body>
+<body style="font-family: 'Yantramanav';">
 
 	<style>
 		
@@ -36,18 +37,20 @@
 				<div class="class_19" >
 				</div>
 				<div class="class_20" >
-					<img src="assets/images/57.png" class="class_21" >
+					<?php
+						$user_id = $_SESSION["USER"]["id"];
+						$sql = "select image from users where id = '$user_id'";
+						$row = query($sql);
+						foreach($row as $data){
+							$user_image = $data["image"];
+						}
+					?>
+					<img src="<?php echo $user_image ?>" class="class_21" >
 					<div class="class_22" >
 						<h1 class="class_23"  >
-							Mary Jane
+							<?php echo $_SESSION["USER"]["username"] ?>
 							<br>
 						</h1>
-						<i class="bi bi-facebook class_24">
-						</i>
-						<i  class="bi bi-twitter class_24">
-						</i>
-						<i  class="bi bi-youtube class_24">
-						</i>
 						<div class="class_15"  >
 							popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
 							

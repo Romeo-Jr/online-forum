@@ -29,6 +29,7 @@
 	<title>Single post - PHP Forum</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
 </head>
 <body>
 
@@ -43,18 +44,15 @@
 		<div class="class_11" >
 			<?php include('success.alert.inc.php') ?>
 			<?php include('fail.alert.inc.php') ?>
-			<h1 class="class_41"  >
-				Single Post
-			</h1>
 			<?php
 				$query = "select users.username, users.image, posts.id, posts.post, posts.date from posts inner join users on posts.user_id = users.id where posts.id = $POST_ID";
 				$row = query($query);
 
 				foreach($row as $data){
 			?>
-				<div class="class_42">
+				<div style="font-family:'Yantramanav';" class="class_42">
 						<div class="class_45">
-							<img src="assets/images/59.png" class="class_47">
+							<img src="assets/images/<?php echo $data['image'] ?>" class="class_47">
 							<h2 class="class_48">
 								<?php echo $data['username'] ?>
 								<br>
@@ -74,7 +72,7 @@
 				}
 			?>
  
-			<div class="class_11" >
+			<div class="class_11" style="font-family:'Yantramanav';">
 				<h1 class="class_41" style="font-size: 16px;"  >
 					Comments
 				</h1>
@@ -100,9 +98,9 @@
 
 				?>
 			
-						<div class="class_42" >
+						<div class="class_42" style="font-family:'Yantramanav';">
 							<div class="class_45" >
-								<img src="assets/images/user.jpg" class="class_47" >
+								<img src="assets/images/<?php echo $data['image']?>" class="class_47" >
 								<h2 class="class_48"  >
 									<?php echo $data['username'] ?>
 									<br>

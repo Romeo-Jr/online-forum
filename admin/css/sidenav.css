@@ -1,0 +1,64 @@
+body {
+    font-family: 'Yantramanav';
+  }
+  .sidenav {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #212429;
+    overflow-x: hidden;
+    padding :0;
+  }
+  
+  .sidenav a {
+    padding: 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f3e3cc;
+    display: block;
+  }
+
+  
+  .main {
+    margin-left: 240px; /* Same as the width of the sidenav */
+  }
+
+
+  .sidenav .head{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .sidenav .head img{
+    width: 100%;
+    height: 200px;
+  }
+
+  .sidenav .class_ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidenav .class_ul li{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  .sidenav .class_ul li:hover{
+    background-color: #0d6dfc;
+  }
+  
+  .main .head h1{
+    margin: 10px 0 0 0;
+  }
+ 
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
