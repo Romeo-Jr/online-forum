@@ -1,7 +1,7 @@
 .content{
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 60px;
 }
 
 .content > div{
@@ -11,7 +11,8 @@
 
 .content > div .body{
     padding: 5px 10px;
-    color: #5c5b63;
+    color: black;
+    font-size: 17px;
 }
 
 .content > div img{

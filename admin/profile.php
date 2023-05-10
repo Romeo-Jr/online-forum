@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="css/profile.css">
+    <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-icons.css">
     <link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
 </head>
@@ -70,14 +71,7 @@
                             <td>Username</td>
                             <td><?php echo $_SESSION["username"] ?></td>
                         </tr>
-                        <tr>
-                            <td>Password</td>
-                            <td>Griffin</td>
-                        </tr>
-                        <tr>
-                            <td>Peter</td>
-                            <td>Griffin</td>
-                        </tr>
+            
                     </table>
                     <button class="update" id="updatebtn">Update</button>
                 </div>

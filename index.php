@@ -23,11 +23,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home - PHP Forum</title>
+	<title>InEqualitalks | Home</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="stylesheet" href="assets/css/index.css">
 	<link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
+	<link rel="icon" type="image/x-icon" href="assets/icon.ico">
 
 </head>
 <body>
@@ -75,7 +76,7 @@
 
 			<section class="js-posts">
 				<?php
-					$query = "select users.username, users.image, posts.id, posts.post, posts.date from posts inner join users on posts.user_id = users.id";
+					$query = "select users.username, users.image, posts.id, posts.post, posts.date from posts inner join users on posts.user_id = users.id ORDER BY posts.date DESC";
 					$row = query($query);
 					
 					if($row){

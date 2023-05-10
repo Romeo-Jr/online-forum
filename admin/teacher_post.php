@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/teacher_post.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
     <link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
 </head>
 <body>

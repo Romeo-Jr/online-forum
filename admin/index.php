@@ -47,6 +47,7 @@
     <title>Admin | Login</title>
     <link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-icons.css">
     
 </head>

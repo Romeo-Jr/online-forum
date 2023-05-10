@@ -1,6 +1,6 @@
 <div class="sidenav">
     <div class="head">
-        <img src="https://www.cbs.dk/files/cbs.dk/styles/cbs_content/public/inequality_logo.png" alt="logo">
+        <img src="../assets/images/default.png" alt="logo">
     </div>
     <ul class="class_ul">
         <li>

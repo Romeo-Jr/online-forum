@@ -34,7 +34,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && !empty($_POST['data_type']))
 		}else
 		{
 			$password = password_hash($password, PASSWORD_DEFAULT);
-			$query = "insert into users (username,email,password,date, image ,role) values ('$username','$email','$password','$date', 'default.jpg' ,'$role')";
+			$query = "insert into users (username,email,password,date, image ,role) values ('$username','$email','$password','$date', 'assets/images/default.png' ,'$role')";
 			query($query);
 
 			$query = "select * from users where email = '$email' limit 1";

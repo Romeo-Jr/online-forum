@@ -1,0 +1,37 @@
+.content{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content > div{
+    width: 700px;
+    padding: 10px;
+}
+
+.content > div:nth-child(2){
+    width: 500px;
+    padding: 20px;
+}
+
+.content > div:nth-child(2) h2{
+    margin:10px 0 0 0;
+    padding: 0 10px;
+}
+
+.content > div:nth-child(2) p{
+    font-size: 18px;
+}
+
+.content > div .body{
+    padding: 5px 10px;
+    color: #5c5b63;
+}
+
+.content > div img{
+    width: 100%;
+}
+
+.content > div p{
+    margin: 0;
+}

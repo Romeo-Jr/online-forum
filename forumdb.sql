@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2023 at 01:09 AM
+-- Generation Time: May 10, 2023 at 06:14 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -61,9 +61,7 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`id`, `user_id`, `comment_id`, `comment`, `date`) VALUES
-(6, 6, 8, 'Hii Omee here', '2023-05-02 18:04:59'),
-(7, 6, 3, '3 post, 1 comment', '2023-05-02 18:05:17'),
-(12, 16, 3, 'Holla', '2023-05-06 20:39:23');
+(15, 19, 17, 'Reducing inequalities requires us to acknowledge and address systemic barriers that have historically disadvantaged certain groups. By working towards a more inclusive and equitable society, we can create a world where everyone has the chance to thrive an', '2023-05-10 18:00:06');
 
 -- --------------------------------------------------------
 
@@ -83,12 +81,10 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `user_id`, `post`, `date`) VALUES
-(2, 1, 'this is my second post', '2023-02-06 16:49:15'),
-(3, 1, 'this is my third post', '2023-02-06 16:50:19'),
-(6, 4, 'hiii', '2023-04-24 02:19:43'),
-(7, 4, 'Qwerty', '2023-04-24 02:25:24'),
-(8, 6, 'Hi World', '2023-05-07 07:58:47'),
-(12, 1, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum est, voluptatibus eos consequuntur iste rem possimus, corporis dolor maiores placeat minima itaque hic nisi earum. Voluptas voluptatibus in atque sequi.', '2023-05-05 17:33:32');
+(14, 19, 'Let us work towards a world where everyone has equal opportunities and access to resources, so that we can reduce inequalities and build a more just and sustainable future for all.\r\n\r\n#ReducedInequalities \r\n#SDG10\r\n#SocialJustice', '2023-05-10 17:39:53'),
+(15, 20, 'Let us work towards creating a world where everyone has an equal opportunity to thrive. By reducing inequalities, we can pave the way for a brighter future where no one is left behind.\r\n#ReducedInequalities #EqualityForAll #SocialJustice', '2023-05-10 17:52:33'),
+(16, 21, 'Reducing inequalities is not just a moral imperative, it is also key to sustainable development. Let us join forces to promote a fair and inclusive society where every individual can realize their full potential.\r\n#LeaveNoOneBehind #SustainableDevelopment #ReducedInequalities', '2023-05-10 17:54:47'),
+(17, 22, 'Access to education, healthcare, and economic opportunities should be universal rights, not privileges for a select few. Let us strive for a world where no one is held back by their socio-economic background or circumstances.\r\n#EqualOpportunities #SocialJustice #ReducedInequalities', '2023-05-10 17:56:50');
 
 -- --------------------------------------------------------
 
@@ -111,13 +107,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `date`, `image`, `role`) VALUES
-(1, 'Eathorne', 'email@email.com', '$2y$10$RFbYu7mI0HO9wdw9DOmUzOnJ.WQ5BXKdCQ1zBwvcn2p0jk/vuOX0W', '2023-02-06', 'assets/images/image1.png', 1),
-(4, 'Mary', 'mary@email.com', '$2y$10$FNSKNLPVLIxayzO7kWlGB.jsRHm12s5/u04hMjXDHpJRwBb4v8I2m', '2023-02-06', 'assets/images/image2.png', 2),
-(5, 'beqenuke', 'pacyvop@mailinator.com', '$2y$10$8HRIG10WTQpUTHT.UXFLY.APxea0rRvaw3R1/ljd7GkeRwHi8DdbW', '2023-05-02', 'assets/images/image3.jpeg', 1),
-(6, 'jarykajun', 'sezipev@mailinator.com', '$2y$10$YvY87myJmTYcQBSyA5dDxOO5M74sEpKEiYVT3rnvQTz5xrbP8wcAS', '2023-05-02', 'assets/images/q.jpg', 2),
-(14, 'belafa', 'xutivofu@mailinator.com', '$2y$10$x/8eZG5tWx0IgdMHDCsb7uRjm54gPS4aEPYSsBvSP2G3vL.CMGc3e', '2023-05-06', 'assets/images/image5.jpeg', 2),
-(15, 'zawira', 'ruhatelej@mailinator.com', '$2y$10$nYeDc3bxULmytCPE58TYoOFkBy/jGv/630uFO2hdfVyO2EIEM2O/S', '2023-05-06', 'assets/images/default.png', 1),
-(16, 'rylityxew', 'gibenyxilu@mailinator.com', '$2y$10$vKFHXTfG34E.7nbWYod3oOJNKjP/y5WuzAOD.imoRxQ6LukmC0hf6', '2023-05-06', 'assets/images/default.png', 2);
+(19, 'Romeo Estoy', 'romeo@email.com', '$2y$10$oEn4dwYKKdkAaQASusA.rOqOeGNBrPueRE8cdCCSWTIfbqKHgGDAq', '2023-05-10', 'assets/images/romeo.jpg', 1),
+(20, 'Andrei Ilao', 'andrei123@gmail.com', '$2y$10$GffBLmys7rqQWPohtDlQwuE8GRQe7dz9cLojRs1.mNKPn9wZBDAqe', '2023-05-10', 'assets/images/andrei.jpg', 2),
+(21, 'Roseann', 'roseannc23@outlook.com', '$2y$10$KfkYc6Iz7tOkT63m03/FCuil3urK7.dX8T9KXG4/23flb1uwDbZaK', '2023-05-10', 'assets/images/roseann.jpg', 2),
+(22, 'Kate', 'katekate@yahoo.com', '$2y$10$FK9fLzP2N8UcDr/Jw9IkzOWf303.a0zhw6Z093kT.tloFqcMrbgSW', '2023-05-10', 'assets/images/kate.jpg', 1);
 
 --
 -- Indexes for dumped tables
@@ -163,19 +156,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -25,10 +25,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home - PHP Forum</title>
+	<title>Edit | Post</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="icon" type="image/x-icon" href="assets/icon.ico">
 
 
 </head>

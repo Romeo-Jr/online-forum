@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/student_post.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-icons.css">
     <link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
 </head>
 <body>
     <?php

@@ -26,10 +26,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Single post - PHP Forum</title>
+	<title>Post</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
+	<link rel="icon" type="image/x-icon" href="assets/icon.ico">
 </head>
 <body>
 
@@ -52,7 +53,7 @@
 			?>
 				<div style="font-family:'Yantramanav';" class="class_42">
 						<div class="class_45">
-							<img src="assets/images/<?php echo $data['image'] ?>" class="class_47">
+							<img src="<?php echo $data['image'] ?>" class="class_47">
 							<h2 class="class_48">
 								<?php echo $data['username'] ?>
 								<br>
@@ -100,7 +101,7 @@
 			
 						<div class="class_42" style="font-family:'Yantramanav';">
 							<div class="class_45" >
-								<img src="assets/images/<?php echo $data['image']?>" class="class_47" >
+								<img src="<?php echo $data['image']?>" class="class_47" >
 								<h2 class="class_48"  >
 									<?php echo $data['username'] ?>
 									<br>
