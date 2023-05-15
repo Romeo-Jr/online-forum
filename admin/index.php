@@ -16,7 +16,7 @@
             foreach($row as $data){
                 $admin_username = $data['username'];
                 $admin_password = $data['password'];
-                $admin_profile_pic = $data['profile_pic'];
+                
                 $admin_id = $data["id"];
                 $role = $data["role"];
     

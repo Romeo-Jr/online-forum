@@ -2,7 +2,7 @@
     require('../config.inc.php');
 	require('../functions.php');
 
-    if(!isset($_SESSION['role']) || $_SESSION["role"] != 1){
+    if(!isset($_SESSION['role']) || $_SESSION["role"] != 3){
         header("Location: ../404.php");
     }
 
@@ -69,7 +69,7 @@
                         </tr>
                         <tr>
                             <td>Username</td>
-                            <td><?php echo $_SESSION["username"] ?></td>
+                            <td><?php echo $user_username ?></td>
                         </tr>
             
                     </table>

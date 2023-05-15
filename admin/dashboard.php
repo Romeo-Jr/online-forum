@@ -3,7 +3,7 @@
     require_once('../config.inc.php');
     require_once('../functions.php');
 
-    if(!isset($_SESSION['role']) || $_SESSION["role"] != 1){
+    if(!isset($_SESSION['role']) || $_SESSION["role"] != 3){
         header("Location: ../404.php");
     }
     

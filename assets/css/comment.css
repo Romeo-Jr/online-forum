@@ -1,0 +1,13 @@
+.comment-ul{
+    margin: 0;
+    list-style: none;
+}
+
+.comment-ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #19A7CE;
+    color: white;
+}
+

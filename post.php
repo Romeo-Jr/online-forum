@@ -29,6 +29,7 @@
 	<title>Post</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/comment.css">
 	<link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
 	<link rel="icon" type="image/x-icon" href="assets/icon.ico">
 </head>
@@ -91,7 +92,7 @@
 				<!-- FORM END -->
 
 				<?php
-					$query = "select users.username, users.image, comments.comment, comments.date from comments inner join users on comments.user_id = users.id where comments.comment_id = $POST_ID Order by date desc";
+					$query = "select users.username, users.image, comments.id ,comments.comment, comments.date from comments inner join users on comments.user_id = users.id where comments.comment_id = $POST_ID Order by date desc";
 					$row = query($query);
 
 					if($row){
@@ -116,23 +117,24 @@
 								<?php echo $data['comment'] ?>
 								</div>
 							</div>
+
 						</div>
+
+						<?php	
+								if($_SESSION['USER']['username'] == $data['username']){
+									$comment_id = $data["id"];
+							?>	
+								<ul class="comment-ul">
+									<a href="edit_comment.php?id=<?php echo $comment_id?>" ><li>Edit</li></a>
+									<a href="delete_comment.php?id=<?php echo $comment_id?>" ><li style="background-color: #C21010; ">Delete</li></a>
+								</ul>
+							<?php
+								}
+							?>
 				<?php
 					}
 				}
 				?>
-					
- 
-				<div class="class_37" >
-					<button class="class_54"  >
-						Prev page
-					</button>
-					<button class="class_39"  >
-						Next page
-					</button>
-					<div class="class_40" >
-					</div>
-				</div>
 			</div>
 		</div>
 
